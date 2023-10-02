@@ -12,7 +12,7 @@
 <br />
 <div align="center">
 <a href="https://github.com/Kurohyou-Studios/k-scaffold-vscode-extension">
-<img src="images/k-200.png" alt="Logo" width="80" height="80">
+<img src="./images/k-200.png" alt="Logo" width="80" height="80">
 </a>
 <h3 align="center">K-scaffold vscode extension</h3>
 <p align="center">
@@ -88,7 +88,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 
 ## License
-Distributed under the mit License. See [LICENSE.txt](LICENSE.txt) for more information.
+Distributed under the mit License. See [LICENSE.txt](./LICENSE.txt) for more information.
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- CONTACT -->
 

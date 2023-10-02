@@ -4,7 +4,7 @@
   "description": "Syntax Highlighting and Code Snippets for the K-scaffold sheet framework",
   "version": "1.0.0",
   "publisher": "Kurohyou Studios",
-  "icon": "images/k-90b.png",
+  "icon": "./images/k-90b.png",
   "license": "MIT",
   "engines": {
     "vscode": "*"

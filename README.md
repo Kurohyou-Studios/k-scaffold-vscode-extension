@@ -12,7 +12,7 @@
 <br />
 <div align="center">
 <a href="https://github.com/Kurohyou-Studios/k-scaffold-vscode-extension">
-<img src="./images/K-200.png" alt="Logo" width="80" height="80">
+<img src="https://github.com/Kurohyou-Studios/k-scaffold-vscode-extension/raw/main/images/K-200.png" alt="Logo" width="80" height="80">
 </a>
 <h3 align="center">K-scaffold vscode extension</h3>
 <p align="center">
@@ -124,4 +124,3 @@ This readme template adapted from the [Best-README-Template](https://github.com/
 [linkedin-url]: https://linkedin.com/in/scott-casey-20210398
 [patreon-shield]: https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dkurohyoustudios%26type%3Dpatrons&style=flat
 [patreon-url]: https://patreon.com/kurohyoustudios
-[product-screenshot]: assets/images/screenshot.png

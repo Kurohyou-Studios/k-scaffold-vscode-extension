@@ -2,8 +2,8 @@
   "name": "kscaffold",
   "displayName": "K-scaffold Sheet Framework",
   "description": "Syntax Highlighting and Code Snippets for the K-scaffold sheet framework",
-  "version": "1.0.0",
-  "publisher": "Kurohyou Studios",
+  "version": "0.0.1",
+  "publisher": "kurohyou-studios",
   "icon": "./images/k-90b.png",
   "license": "MIT",
   "engines": {

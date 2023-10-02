@@ -1,0 +1,108 @@
+{
+  "allProps":{
+		"prefix":"!k-allProps",
+		"description":"allProps helper function handling",
+		"body":[
+			"+allProps({values:'${1:fields to ignore}'})",
+        "\t${0}"
+		]
+	},
+  "characterLink":{
+    "prefix":"!k-characterLink",
+    "description":"Creates handling for creating a link back to the character that sent the roll.",
+    "body":[
+      "+characterLink"
+    ]
+  },
+  "multiPartTemplate":{
+    "prefix":"!k-multiPartTemplate",
+    "description":"Creates a rolltemplate wrapper for use in creating multi part roll templates that look like one message, but are actually created from multiple roll messages.",
+    "body":[
+      "+multiPartTemplate",
+        "\t${0}"
+    ]
+  },
+  "rollBetween":{
+    "prefix":"!k-rollBetween",
+    "description":"Alias for templateHelperFunction that sets the function to be rollBetween.",
+    "body":[
+      "+rollBetween({values:'field-name and values'})",
+        "\t${0}"
+    ]
+  },
+  "rollGreater":{
+    "prefix":"!k-rollGreater",
+    "description":"Alias for templateHelperFunction that sets the function to be rollGreater.",
+    "body":[
+      "+rollGreater({values:'field-name and values'})",
+        "\t${0}"
+    ]
+  },
+  "rollLess":{
+    "prefix":"!k-rollLess",
+    "description":"Alias for templateHelperFunction that sets the function to be rollLess.",
+    "body":[
+      "+rollLess({values:'field-name and values'})",
+        "\t${0}"
+    ]
+  },
+  "rollTotal":{
+    "prefix":"!k-rollTotal",
+    "description":"Alias for templateHelperFunction that sets the function to be rollTotal.",
+    "body":[
+      "+rollTotal({values:'field-name and values'})",
+        "\t${0}"
+    ]
+  },
+  "rollWasCrit":{
+    "prefix":"!k-rollWasCrit",
+    "description":"Alias for templateHelperFunction that sets the function to be rollWasCrit.",
+    "body":[
+      "+rollWasCrit({values:'field-name'})",
+        "\t${0}"
+    ]
+  },
+  "rollWasFumble":{
+    "prefix":"!k-rollWasFumble",
+    "description":"Alias for templateHelperFunction that sets the function to be rollWasFumble.",
+    "body":[
+      "+rollWasFumble({values:'field-name'})",
+        "\t${0}"
+    ]
+  },
+  "templateHelperFunction":{
+    "prefix":"!k-templateHelperFunction",
+    "description":"Helper function that simplifies using the Roll20 Roll Template Helper Functions",
+    "body":[
+      "+templateHelperFunction({",
+        "\tfunc:'${1|allProps|rollBetween|rollGreater|rollLess|rollTotal|rollWasCrit|rollWasFumble|}",
+        "\tvalues:'${2:field-name and values}'",
+      "})",
+        "\t${0}"
+    ]
+  },
+  "rolltemplate":{
+    "prefix":"!k-rolltemplate",
+    "description":"Creates a rolltemplate wrapper around content",
+    "body":[
+      "+rollBetween({values:'field-name and values'})",
+        "\t${0}"
+    ]
+  },
+  "templateConditionalDisplay":{
+    "prefix":"!k-templateConditionalDisplay",
+    "description":"Helper mixin for using the Roll20 Roll Template Logic",
+    "body":[
+      "+templateConditionalDisplay('${1:field-name}'${2||,'invert')",
+        "\t${0}"
+    ]
+  },
+  "templateWrapper":{
+    "prefix":"!k-templateWrapper",
+    "description":"Creates a nested rolltemplate wrapper. Useful for ensuring you can add enough specificity to your roll template css.",
+    "body":[
+      "+template-wrapper('${1:template-name}')",
+        "\t${0}"
+    ]
+  }
+}

@@ -1,0 +1,19 @@
++input({name:'template start',type:'text',value:'&{template:default} {{roll=[[1d20 + 5@{some_attribute}]]}}'})
+//- @pugdoc
+  name: Mixin Name
+  memberof: 
+  description: Description
+  arguments:
+  attributes:
+  example: |
+    include ../_k.pug
+    +Mixin Call
++scss.
+  .my-class{
+    display: none;
+  }
++module.
+  const myCar = {};
+  const myFUnc = (arg1) => {
+    const some = [];
+  };

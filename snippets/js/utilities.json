@@ -1,0 +1,121 @@
+{
+  "capitalize":{
+    "prefix":"k.capitalize",
+    "description":"Capitalize each word in a string",
+    "body":[
+      "k.capitalize(${1})${0}"
+    ]
+  },
+  "commaArray":{
+    "prefix":"k.commaArray",
+    "description":"Splits a comma delimited string into an array",
+    "body":[
+      "k.commaArray(${1})${0}"
+    ]
+  },
+  "debug":{
+    "prefix":"k.debug",
+    "description":"Alias for console.log that only triggers when debug mode is enabled or when the sheet's version is 0. Useful for entering test logs that will not pollute the console on the live sheet.",
+    "body":[
+      "k.debug(${1})${0}"
+    ]
+  },
+  "escape":{
+    "prefix":"k.escape",
+    "description":"Encodes data in Base64. This is useful for passing roll information to action buttons called from roll buttons.",
+    "body":[
+      "k.escape(${1})${0}"
+    ]
+  },
+  "extractQueryResult":{
+    "prefix":"k.extractQueryResult",
+    "description":"Extracts a roll query result for use in later functions. Must be awaited as per startRoll documentation.",
+    "body":[
+      "k.extractQueryResult(${1})${0}"
+    ]
+  },
+  "log":{
+    "prefix":"k.log",
+    "description":"An alias for console.log.",
+    "body":[
+      "k.log(${1})${0}"
+    ]
+  },
+  "orderSection":{
+    "prefix":"k.orderSection",
+    "description":"Orders a single ID array.",
+    "body":[
+      "k.orderSection(${1:new ID order},${2:Current ID order})${0}"
+    ]
+  },
+  "orderSections":{
+    "prefix":"k.orderSections",
+    "description":"Orders the section id arrays for all sections in the sections object to match the repOrder attribute.",
+    "body":[
+      "k.orderSections(attributes,sections)${0}"
+    ]
+  },
+  "parseHTMLName":{
+    "prefix":"k.parseHTMLName",
+    "description":"Parses out the attribute name from the htmlattribute name.",
+    "body":[
+      "k.parseHTMLName(${1})${0}"
+    ]
+  },
+  "parseMacro":{
+    "prefix":"k.parseMacro",
+    "description":"Parses a macro so that it is reduced to the final values of all attributes contained in the macro. Will drill down up to 99 levels deep. If the string was not parseable, string will be returned with as much parsed as possible.",
+    "body":[
+      "k.parseMacro(${1},attributes,sections)${0}"
+    ]
+  },
+  "parseRepeatName":{
+    "prefix":"k.parseRepeatName",
+    "description":"Extracts the section (e.g. repeating_equipment), rowID (e.g -;lkj098J:LKj), and field name (e.g. bulk) from a repeating attribute name.",
+    "body":[
+      "k.parseRepeatName(${1})${0}"
+    ]
+  },
+  "parseTriggerName":{
+    "prefix":"k.parseTriggerName",
+    "description":"Parses out the components of a trigger name similar to parseRepeatName.",
+    "body":[
+      "k.parseTriggerName(${1})${0}"
+    ]
+  },
+  "pseudoQuery":{
+    "prefix":"k.pseudoQuery",
+    "description":"Simulates a query for ensuring that async/await works correctly in the sheetworker environment when doing conditional startRolls. E.g. if you have an if/else and only one of the conditions results in startRoll being called (and thus an await), the sheetworker environment would normally crash. Awaiting this in the condition that does not actually need to call startRoll will keep the environment in sync.",
+    "body":[
+      "k.pseudoQuery(${1})${0}"
+    ]
+  },
+  "registerFuncs":{
+    "prefix":"k.registerFuncs",
+    "description":"Function that registers a function for being called via the funcs object. Returns true if the function was successfully registered, and false if it could not be registered for any reason.",
+    "body":[
+      "k.registerFuncs({${1}},{type:['${2|opener,updater,new,all|}']});${0}"
+    ]
+  },
+  "sanitizeForRegex":{
+    "prefix":"k.sanitizeForRegex",
+    "description":"Replaces problem characters to use a string as a regex",
+    "body":[
+      "k.sanitizeForRegex(${1})${0}"
+    ]
+  },
+  "unescape":{
+    "prefix":"k.unescape",
+    "description":"Decodes Base64 encoded strings that were created by the K-scaffold",
+    "body":[
+      "k.unescape(${1})${0}"
+    ]
+  },
+  "value":{
+    "prefix":"k.value",
+    "description":"Converts a value to a number, it's default value, or 0 if no default value passed.",
+    "body":[
+      "k.value(${1})${0}"
+    ]
+  }
+}

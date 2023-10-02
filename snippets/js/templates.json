@@ -1,0 +1,36 @@
+{
+	"K-scaffold Function Definition":{
+		"prefix":"!k-function",
+		"description":"Creates the declaration and registration framework for a basic K-scaffold compatible function",
+		"body":[
+			"/**",
+			" * ${2}",
+			" * @param {object} trigger - The trigger that caused the function to be called",
+			" * @param {object} attributes - The attribute values of the character",
+			" * @param {object[]} sections - All the repeating section IDs",
+			" * @param {object} casc - Expanded cascade object",
+			" */",
+			"const ${1:Function name} = function({trigger,attributes,sections,casc}){",
+			"\t${0}",
+			"};",
+			"k.registerFuncs({${1}});"
+		]
+	},
+	"K-scaffold typed function definition":{
+		"prefix":"!k-typedFunction",
+		"description":"Creates the declaration and registration framework for a K-scaffold compatible function that needs to be registered as one of the K-scaffold function types",
+		"body":[
+			"/**",
+			" * ${3}",
+			" * @param {object} trigger - The trigger that caused the function to be called",
+			" * @param {object} attributes - The attribute values of the character",
+			" * @param {object[]} sections - All the repeating section IDs",
+			" * @param {object} casc - Expanded cascade object",
+			" */",
+			"const ${1:Function name} = function({trigger,attributes,sections,casc}){",
+			"\t${0}",
+			"};",
+			"k.registerFuncs({${1}},{type:['${2|opener,updater,new,all|}']});"
+		]
+	}
+}

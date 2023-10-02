@@ -1,0 +1,65 @@
+{ 
+	"pugdoc":{
+		"prefix":"@pugdoc",
+		"description":"Generic Pug doc declaration for mixin",
+		"body":[
+			"//- @pugdoc",
+			  "\tname: ${1:Mixin Name}",
+			  "\tmemberof: ${2}",
+			  "\tdescription: ${3:Description}",
+			  "\targuments:",
+			  "\tattributes:",
+			  "\texample: |",
+			  "\t\t+${0:Mixin Call}"
+		]
+	},
+	"Mixin declaration with pugdoc":{
+		"prefix":"mixin",
+		"description":"A generic Pug description",
+		"body":[
+			"//- @pugdoc",
+			  "\tname: ${1:Mixin Name}",
+			  "\tdescription: ${2:Description}",
+			  "\targuments:",
+			  "\tattributes:",
+			  "\texample: |",
+			  "\t\t+${4:Mixin Call}",
+			"mixin ${1:Mixin Name}${0:Mixin Code}"
+		]
+	},
+	"pugdoc string argument":{
+		"prefix":"@string",
+		"description":"An argument declaration for a string argument",
+		"body":[
+			"- {string} ${1:Argument name} - ${2:Argument Description}"
+		]
+	},
+	"pugdoc number argument":{
+		"prefix":"@number",
+		"description":"An argument declaration for a number argument",
+		"body":[
+			"- {number} ${1:Argument name} - ${2:Argument Description}"
+		]
+	},
+	"pugdoc object argument":{
+		"prefix":"@object",
+		"description":"An argument declaration for a object argument",
+		"body":[
+			"- {object} ${1:Argument name} - ${2:Argument Description}"
+		]
+	},
+	"pugdoc array argument":{
+		"prefix":"@array",
+		"description":"An argument declaration for a array argument",
+		"body":[
+			"- {[${1:Array of what}]} ${2:Argument name} - ${3:Argument Description}"
+		]
+	},
+	"pugdoc block argument":{
+		"prefix":"@block",
+		"description":"An argument declaration for a block argument",
+		"body":[
+			"- {block} block - ${2:Block Description}"
+		]
+	}
+}

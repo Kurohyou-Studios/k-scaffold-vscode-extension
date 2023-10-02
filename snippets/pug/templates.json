@@ -1,0 +1,43 @@
+{
+  "Default K-scaffold Sheet Start":{
+		"prefix":"!k-start",
+		"body":[
+			"include k-scaffold",
+			"include ./mixins/_index.pug",
+			"- const templateName = '${1:template-name}';",
+			"+hidden({name:'template start',value:`@{whisper}&{template:\\${templateName}} {{character_name=@{character_name}}} {{character_id=@{character_id}}}`})",
+			"//- sheet version will create the attribute to store the sheet's version in.",
+			"+hidden({name:'sheet version',value:0})",
+			"//- Now, for our actual sheet. We'll wrap this in a main element and give it an ID of main.",
+			"main#main",
+				"\t+tabs({name:'${2:project-name}',defaultActiveTab:'${3:settings}'})",
+					"\t\t+tab({name:'${3:settings}',button:{content:'settings',class:'material-icons'},container:'article',active:true})",
+						"\t\t\tinclude ./articles/_${3:settings}.pug",
+					"\t\t$0",
+			"include ./rolltemplate/_index.pug",
+			"+kscript",
+				"\t//- All additional javascript files should be included in the index file or via a module mixin call in another k-scaffold file",
+				"\tinclude ./javascript/_index.pug"
+		],
+		"description":"Creates the start of a generic k-scaffold driven sheet"
+	},
+	"SFC K-scaffold Sheet Start": {
+		"prefix": "!k-sfc",
+		"body":[
+			"include k-scaffold",
+			"include ./components/_index.kscaf",
+			"include ./sections/_index.kscaf",
+			"- const templateName = '${1:template-name}';",
+			"+hidden({name:'template start',value:`@{whisper}&{template:\\${templateName}} {{character_name=@{character_name}}} {{character_id=@{character_id}}}`})",
+			"//- sheet version will create the attribute to store the sheet's version in.",
+			"+hidden({name:'sheet version',value:0})",
+			"//- Now, for our actual sheet. We'll wrap this in a main element and give it an ID of main.",
+			"main#main",
+				"\tinclude ./views/_index.kscaf",
+			"include ./rolltemplate/_index.kscaf",
+			"+kscript",
+				"\t//- Generic or globally applicable javscript should be included in the javascript index file",
+				"\tinclude ./javascript/_index.kscaf"
+		]
+	}
+}

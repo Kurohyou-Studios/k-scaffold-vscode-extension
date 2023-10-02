@@ -1,0 +1,294 @@
+{
+  "input":{
+		"prefix":"!k-input",
+		"description":"The generic K-scaffold input mixin",
+		"body":[
+			"+input({name:'${1:Attribute name}',type:'${2|text,number,hidden,checkbox,radio,range|}',value:${0}})"
+		]
+	},
+	"text":{
+		"prefix":"!k-text",
+		"description":"The generic K-scaffold text mixin",
+		"body":[
+			"+text({name:'${1:Attribute name}',value:'${0}'})"
+		]
+	},
+	"number":{
+		"prefix":"!k-number",
+		"description":"The generic K-scaffold number mixin",
+		"body":[
+			"+number({name:'${1:Attribute name}',value:${0}})"
+		]
+	},
+	"checkbox":{
+		"prefix":"!k-checkbox",
+		"description":"The generic K-scaffold checkbox mixin",
+		"body":[
+			"+checkbox({name:'${1:Attribute name}',value:${0}})"
+		]
+	},
+	"radio":{
+		"prefix":"!k-radio",
+		"description":"The generic K-scaffold radio mixin",
+		"body":[
+			"+radio({name:'${1:Attribute name}',value:${0}})"
+		]
+	},
+	"hidden":{
+		"prefix":"!k-hidden",
+		"description":"The generic K-scaffold hidden mixin",
+		"body":[
+			"+hidden({name:'${1:Attribute name}',value:${0}})"
+		]
+	},
+	"range":{
+		"prefix":"!k-range",
+		"description":"The generic K-scaffold range mixin",
+		"body":[
+			"+range({name:'${1:Attribute name}',value:${0}})"
+		]
+	},
+	"textarea":{
+		"prefix":"!k-textarea",
+		"description":"The generic K-scaffold textarea mixin",
+		"body":[
+			"+textarea({name:'${1:Attribute name}',value:${0}})"
+		]
+	},
+	"select":{
+		"prefix":"!k-select",
+		"description":"The generic K-scaffold select mixin",
+		"body":[
+			"+select({name:'${1:Attribute name}',value:${2}})",
+			"\t${0}"
+		]
+	},
+	"option":{
+		"prefix":"!k-option",
+		"description":"The generic K-scaffold option mixin",
+		"body":[
+			"+option({value:'${1}','data-i18n':'${2}'})"
+		]
+	},
+	"img":{
+		"prefix":"!k-img",
+		"description":"The generic K-scaffold img mixin",
+		"body":[
+			"+img({name:'${1:Attribute name}',src:'${0}'})"
+		]
+	},
+	"span":{
+		"prefix":"!k-span",
+		"description":"The generic K-scaffold span mixin",
+		"body":[
+			"+span({name:'${1:Attribute name}'${0}})"
+		]
+	},
+	"button":{
+		"prefix":"!k-button",
+		"description":"The generic K-scaffold button mixin",
+		"body":[
+			"+button({name:'${1:Button name}',value:'${0}'})"
+		]
+	},
+	"action":{
+		"prefix":"!k-action",
+		"description":"The generic K-scaffold action mixin",
+		"body":[
+			"+action({",
+			"\tname:'${1:Button name}',${0}",
+			"\ttrigger:{triggeredFuncs:['${2:Function Name to Call}']}",
+			"})"
+		]
+	},
+	"navButton":{
+		"prefix":"!k-navButton",
+		"description":"The generic K-scaffold navButton mixin",
+		"body":[
+			"+navButton({",
+			"\tname:'${1:Button name}',${0}",
+			"\ttrigger:{triggeredFuncs:['${2:Function Name to Call}']}",
+			"})"
+		]
+	},
+	"roller":{
+		"prefix":"!k-roller",
+		"description":"The generic K-scaffold roller mixin",
+		"body":[
+			"+roller({",
+			"\tname:'${1:Button name}',${0}",
+			"\ttrigger:{triggeredFuncs:['${2:Function Name to Call}']}",
+			"})"
+		]
+	},
+	"fieldset":{
+		"prefix":"!k-fieldset",
+		"description":"The generic K-scaffold fieldset mixin",
+		"body":[
+			"+fieldset({",
+			"\tname:'${1:Attribute name}',",
+			"\ttrigger:{${2}},",
+			"\taddClass:'${3}'",
+			"})"
+		]
+	},
+	"customControlFieldset":{
+		"prefix":"!k-customControlFieldset",
+		"description":"The generic K-scaffold customControlFieldset mixin",
+		"body":[
+			"+customControlFieldset({",
+			"\tname:'${1:Attribute name}',",
+			"\ttrigger:{${2}},",
+			"\taddClass:'${3}'",
+			"})"
+		]
+	},
+	"inlineFieldset":{
+		"prefix":"!k-inlineFieldset",
+		"description":"The generic K-scaffold inlineFieldset mixin",
+		"body":[
+			"+inlineFieldset({",
+			"\tname:'${1:Attribute name}',",
+			"\ttrigger:{${2}},",
+			"\taddClass:'${3}'",
+			"})"
+		]
+	},
+	"input-label":{
+		"prefix":"!k-input-label",
+		"description":"The K-scaffold input-label mixin",
+		"body":[
+			"+input-label({",
+			"\tinputObj:{${1}}",
+			"\tspanObj:{${2}}",
+			"})${0}"
+		]
+	},
+	"select-label":{
+		"prefix":"!k-select-label",
+		"description":"The K-scaffold select-label mixin",
+		"body":[
+			"+select-label({",
+			"\tinputObj:{${1}}",
+			"\tspanObj:{${2}}",
+			"})",
+			"\t${0}"
+		]
+	},
+	"action-label":{
+		"prefix":"!k-action-label",
+		"description":"The K-scaffold action-label mixin",
+		"body":[
+			"+action-label({",
+			"\tbuttonObj:{${1}}",
+			"\tspanObj:{${2}}",
+			"})${0}"
+		]
+	},
+	"roller-label":{
+		"prefix":"!k-roller-label",
+		"description":"The K-scaffold roller-label mixin",
+		"body":[
+			"+roller-label({",
+			"\tinputObj:{${1}}",
+			"\tbuttonObj:{${2}}",
+			"})${0}"
+		]
+	},
+	"button-label":{
+		"prefix":"!k-button-label",
+		"description":"The K-scaffold button-label mixin",
+		"body":[
+			"+button-label({",
+			"\tbuttonObj:{${1}}",
+			"\tspanObj:{${2}}",
+			"})${0}"
+		]
+	},
+	"adaptiveTextarea":{
+		"prefix":"!k-adaptiveTextarea",
+		"description":"The K-scaffold adaptiveTextarea mixin",
+		"body":[
+			"+adaptiveTextarea(${1:textObj})${0}"
+		]
+	},
+	"adaptiveInput":{
+		"prefix":"!k-adaptiveInput",
+		"description":"The K-scaffold adaptiveInput mixin",
+		"body":[
+			"+adaptiveInput(${1:textObj})${0}"
+		]
+	},
+	"headedTextarea":{
+		"prefix":"!k-headedTextarea",
+		"description":"The K-scaffold headedTextarea mixin",
+		"body":[
+			"+headedTextarea({",
+			"\theader:'${1}',",
+			"\ttextObj:${2},",
+			"})${0}"
+		]
+	},
+	"compendiumAttributes":{
+		"prefix":"!k-compendiumAttributes",
+		"description":"The K-scaffold compendiumAttributes mixin",
+		"body":[
+			"+compendiumAttributes({prefix:'${1}'})${0}"
+		]
+	},
+	"compendiumContainer":{
+		"prefix":"!k-compendiumAttributes",
+		"description":"The K-scaffold compendiumAttributes mixin",
+		"body":[
+			"+compendiumContainer({vttCategories:['${1}']})",
+        "\t${0}"
+		]
+	},
+	"Full Trigger":{
+		"prefix":"!k-trigger",
+		"description":"A trigger that includes all the likely trigger elements to be referenced in a pug declaration",
+		"body":[
+			"trigger:{",
+			"\taffects:[${1:Array of attribute names that should be affected when this attribute is changed}],",
+			"\tinitialFuncs:[${2:Array of function names to trigger only when this attribute is changed by the user}],",
+			"\ttriggeredFuncs:[${3:Array of function names to trigger when this attribute is affected or button is clicked}]",
+			"\tcalculation:${4:String name of the function to call to calculate the value of this attribute},",
+			"}"
+		]
+	},
+	"Simple affects trigger":{
+		"prefix":"!k-affects",
+		"description":"A simple trigger that just contains an affects property",
+		"body":[
+			"trigger:{affects:[${1:Array of attribute names that should be affected when this attribute is changed}]}"
+		]
+	},
+	"Simple calculation trigger":{
+		"prefix":"!k-calculation",
+		"description":"A simple trigger that just contains a calculation property",
+		"body":[
+			"trigger:{calculation:${1:String name of the function to call to calculate the value of this attribute}}"
+		]
+	},
+	"Simple formula trigger":{
+		"prefix":"!k-formula",
+		"description":"A simple trigger that just contains a calculation property",
+		"body":[
+			"trigger:{formula:${1:String Roll20 Macro expression}}"
+		]
+	},
+	"Simple initialFuncs trigger":{
+		"prefix":"!k-initialFuncs",
+		"description":"A simple trigger that just contains the initialFuncs property",
+		"body":[
+			"trigger:{initialFuncs:[${1:Array of function names to trigger only when this attribute is changed by the user}]}"
+		]
+	},
+	"Simple triggeredFuncs trigger":{
+		"prefix":"!k-triggeredFuncs",
+		"description":"A simple trigger that just contains a triggeredFuncs Property",
+		"body":[
+			"trigger:{triggeredFuncs:[${1:Array of function names to trigger when this attribute is affected or button is clicked}]}"
+		]
+	}
+}

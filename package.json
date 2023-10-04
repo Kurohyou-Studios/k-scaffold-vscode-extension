@@ -25,38 +25,41 @@
     ],
     "grammars": [
       {
-        "language": "kscaffold",
-        "scopeName": "source.kscaf",
-        "path": "./syntaxes/k-scaffold.tmLanguage.json"
+        "scopeName": "k-scaffold.injection",
+        "injectTo": ["text.pug"],
+        "path": "./syntaxes/kscaffold.tmLanguage.json",
+        "embeddedLanguages": {
+          "meta.embedded.block.javascript": "javascript"
+        }
       }
     ],
     "snippets":[
       {
-        "language": "kscaffold",
+        "language": "Pug",
         "path": "./snippets/pug/documentation.json"
       },
       {
-        "language": "kscaffold",
+        "language": "Pug",
         "path": "./snippets/pug/mixins.json"
       },
       {
-        "language": "kscaffold",
+        "language": "Pug",
         "path": "./snippets/pug/rolltemplates.json"
       },
       {
-        "language": "kscaffold",
+        "language": "Pug",
         "path": "./snippets/pug/templates.json"
       },
       {
-        "language": "kscaffold",
+        "language": "js",
         "path": "./snippets/js/sheetworkers.json"
       },
       {
-        "language": "kscaffold",
+        "language": "js",
         "path": "./snippets/js/templates.json"
       },
       {
-        "language": "kscaffold",
+        "language": "js",
         "path": "./snippets/js/utilities.json"
       }
     ],

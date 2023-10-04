@@ -17,7 +17,7 @@
 <h3 align="center">K-scaffold vscode extension</h3>
 <p align="center">
 
-A vscode extension to provide syntax highlighting and code snippets for K-scaffold files.
+A vscode extension to provide syntax highlighting and code snippets for K-scaffold Pug files.
 
 
 <a href="https://github.com/Kurohyou-Studios/k-scaffold-vscode-extension"><strong>Explore the docs »</strong></a>
@@ -53,8 +53,7 @@ A vscode extension to provide syntax highlighting and code snippets for K-scaffo
 <!-- ABOUT THE PROJECT -->
 
 ## About The Project
-![Product Name Screen Shot][product-screenshot]
-TODO
+This extension provides syntax highlighting of SCSS and JS when they are embedded with the K-scaffold `module` and `scss` mixins. It also provides a library of useful snippets for quickly creating K-scaffold content.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With

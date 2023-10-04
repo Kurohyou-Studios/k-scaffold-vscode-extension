@@ -1,0 +1,65 @@
+{
+  "scopeName": "k-scaffold.injection",
+  "injectionSelector": "L:text.pug",
+  "patterns": [
+    {
+      "include": "#module"
+    },
+    {
+      "include": "#scss"
+    }
+  ],
+  "repository": {
+    "module": {
+			"begin": "(\\s*)(\\+)(module)(\\.)",
+      "beginCaptures": {
+        "2": {
+          "name": "storage.type.function.pug"
+        },
+        "3": {
+          "name": "entity.name.function.pug"
+        },
+        "4": {
+          "name": "storage.type.function.pug.dot-block-dot"
+        }
+      },
+      "end": "^(?!(\\1\\s)|\\s*$)",
+      "contentName": "meta.embedded.block.javascript",
+      "patterns": [
+        {
+          "include": "source.js"
+        }
+      ]
+    },
+    "scss": {
+			"begin": "(\\s*)(\\+)(scss)(?:(\\()('.+?')(\\)))?(\\.)",
+      "beginCaptures": {
+        "2": {
+          "name": "storage.type.function.pug"
+        },
+        "3": {
+          "name": "entity.name.function.pug"
+        },
+        "4": {
+          "name": "args.mixin.pug"
+        },
+        "5": {
+          "name": "string.quoted.single.js"
+        },
+        "6": {
+          "name": "args.mixin.pug"
+        },
+        "7": {
+          "name": "storage.type.function.pug.dot-block-dot"
+        }
+      },
+      "end": "^(?!(\\1\\s)|\\s*$)",
+      "name": "meta.tag.other",
+      "patterns": [
+        {
+          "include": "source.css.scss"
+        }
+      ]
+    }
+  }
+}

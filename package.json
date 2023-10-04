@@ -2,27 +2,26 @@
   "name": "kscaffold",
   "displayName": "K-scaffold Sheet Framework",
   "description": "Syntax Highlighting and Code Snippets for the K-scaffold sheet framework",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publisher": "kurohyou-studios",
   "icon": "./images/k-90b.png",
   "license": "MIT",
   "engines": {
     "vscode": "*"
   },
+  "categories": [
+      "Programming Languages",
+      "Language Packs",
+      "Visualization",
+      "Other"
+  ],
+  "keywords": [
+      "Roll20",
+      "TTRPG",
+      "RPG",
+      "syntax highlight"
+  ],
   "contributes": {
-    "languages": [
-      {
-        "id": "kscaffold",
-        "icon": {
-          "light": "./images/k-90b.png",
-          "dark": "./images/k-90b.png"
-        },
-        "extensions": [
-          ".kscaf"
-        ],
-        "configuration": "./language-configuration.json"
-      }
-    ],
     "grammars": [
       {
         "scopeName": "k-scaffold.injection",
@@ -35,39 +34,46 @@
     ],
     "snippets":[
       {
-        "language": "Pug",
+        "language": "jade",
         "path": "./snippets/pug/documentation.json"
       },
       {
-        "language": "Pug",
+        "language": "jade",
         "path": "./snippets/pug/mixins.json"
       },
       {
-        "language": "Pug",
+        "language": "jade",
         "path": "./snippets/pug/rolltemplates.json"
       },
       {
-        "language": "Pug",
+        "language": "jade",
         "path": "./snippets/pug/templates.json"
       },
       {
-        "language": "js",
+        "language": "jade",
         "path": "./snippets/js/sheetworkers.json"
       },
       {
-        "language": "js",
+        "language": "jade",
         "path": "./snippets/js/templates.json"
       },
       {
-        "language": "js",
+        "language": "jade",
+        "path": "./snippets/js/utilities.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/js/sheetworkers.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/js/templates.json"
+      },
+      {
+        "language": "javascript",
         "path": "./snippets/js/utilities.json"
       }
-    ],
-    "configurationDefaults": {
-      "[kscaffold]": {
-        "diffEditor.ignoreTrimWhitespace": false
-      }
-    }
+    ]
   },
   "repository": {
     "type": "git",

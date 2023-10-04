@@ -24,7 +24,7 @@
         }
       },
       "end": "^(?!(\\1\\s)|\\s*$)",
-      "contentName": "meta.tag.other",
+      "contentName": "meta.embedded.block.javascript",
       "patterns": [
         {
           "include": "source.js"
